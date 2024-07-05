@@ -181,6 +181,10 @@ System.exit(0);
 ![image](https://github.com/Devubavariaa/DATA-ANALYSIS-AND-MOVIE-RECOMMENDATION-USING-SPARK/assets/172360482/7453471d-275b-4945-a99f-f6ff3bcc46b8)
 
 
-
+# Usage
+Clone this repository
+```
+git clone <[repository-url](https://github.com/Devubavariaa/DATA-ANALYSIS-AND-MOVIE-RECOMMENDATION-USING-SPARK)>
+```
 
 
