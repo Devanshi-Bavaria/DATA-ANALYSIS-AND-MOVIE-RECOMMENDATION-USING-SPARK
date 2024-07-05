@@ -43,28 +43,13 @@ We have three datasets named `movies.dat`, `ratings.dat`, and `users.dat` which 
    - **Title**: Unique movie titles provided by IMDB.
    - **Genres**: Includes more than 10 genres such as action, adventure, fantasy, drama, war, western, thriller, horror, musical, animation, etc.
 
-# Spark DataFrame
-
-Apache Spark DataFrames are structured data collections that combine the benefits of conventional databases with the distributed computing capabilities of Spark. They include schema information, making them appropriate for structured and semi-structured data. DataFrames leverage Spark’s optimization techniques for enhanced performance and enable simple data manipulation via a high-level API. They support parallel processing across clusters and in-memory capabilities for rapid data analysis. Extensively used for data transformations, SQL-like querying, and seamless integration with diverse data sources, DataFrames are essential for large-scale data processing and analysis in languages such as Scala, Python, and Java.
-
-## Data Preparation:
+# Data Preparation:
 
 1. **Prepare Movies dataset**: Clean delimited data and extract the year and genre.
 2. **Prepare Users dataset**: Load a double-delimited CSV file into a DataFrame and specify the schema programmatically.
 3. **Prepare Ratings dataset**: Load a double-delimited CSV file into a DataFrame and specify the schema programmatically.
 
 To achieve the above results, run the command `sh execute.sh` in the terminal at the relevant path.
-
-# Spark RDD
-
-Apache Spark RDD (Resilient Distributed Dataset) is a core data structure designed for distributed data processing. Key features of RDDs include:
-
-- **Distributed Data**: Divides data among nodes for parallel processing, handling massive datasets efficiently.
-- **Resilience**: Can recover from node failures by rebuilding lost data partitions.
-- **Immutability**: Data cannot be modified after creation, ensuring data integrity.
-- **Transformations**: Supports operations like map, filter, and reduce for distributed data manipulation.
-- **Actions**: Executes transformations and returns results to the driver program.
-- **Caching**: Can be cached in memory to improve efficiency for iterative algorithms or multiple calculations.
 
 
 # Data Analysis Results
@@ -182,7 +167,18 @@ System.exit(0);
 ![image](https://github.com/Devubavariaa/DATA-ANALYSIS-AND-MOVIE-RECOMMENDATION-USING-SPARK/assets/172360482/7849b8f4-e7b1-422c-bfe5-64abbf3b1628)
 
 # Movie Recommendations Results
+### Generate top 10 user recommendations for each movie
 
+![image](https://github.com/Devubavariaa/DATA-ANALYSIS-AND-MOVIE-RECOMMENDATION-USING-SPARK/assets/172360482/d688eb4b-5111-4c0e-8182-427e4c77d8d7)
+
+### Generate top 10 movie recommendations for each user
+
+![image](https://github.com/Devubavariaa/DATA-ANALYSIS-AND-MOVIE-RECOMMENDATION-USING-SPARK/assets/172360482/fbf9fe5a-8946-4172-8892-1b9c2ab7f2e8)
+
+
+### Generate top 10 user recommendations for a specified set of users and movies
+
+![image](https://github.com/Devubavariaa/DATA-ANALYSIS-AND-MOVIE-RECOMMENDATION-USING-SPARK/assets/172360482/7453471d-275b-4945-a99f-f6ff3bcc46b8)
 
 
 
